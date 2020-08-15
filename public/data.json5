@@ -1,0 +1,138 @@
+{
+  // 页面title
+  title: "薛昊洋 - Vip、疯子",
+  // 社交链接
+  social: {
+    github: "https://github.com/manerfan",
+    twitter: "https://twitter.com/manerfan_china",
+    linkedin: "https://www.linkedin.com/in/%E6%B0%B8%E6%B0%B8-%E6%A8%8A-705071104/",
+  },
+  // banner页
+  banner: {
+    anchor: {
+      id: "banner",
+      icon: "home",
+      name: "首页",
+    },
+    title: "Vip、疯子",
+    desc: [
+      "南方小伙",
+      "绰号疯子",
+      "码农一枚",
+      "初出茅庐",
+    ],
+  },
+  // 正文
+  // 不要修改各模块的 anchor.id
+  // 通过display控制模块是否展示
+  // 通过列表顺序控制模块展示顺序
+  modules: [
+    // 关于页
+    {
+      display: true,
+      anchor: {
+        id: "about",
+        icon: "user",
+        name: "关于"
+      },
+      header: {
+        title: "information",
+        subtitle: "about me",
+      },
+      content: {
+        name: "薛昊洋",
+        desc: [
+          "昊天罔极",
+          "洋洋得意",
+        ],
+        md: "鄙人薛昊洋，生于浙江宁波，纯南方小伙，也是最后一批90后，苦读十二载，后求学于浙江杭州~\
+        \n『**笃学力行、守正求新**』这是母校给予的八字真言，四年本科生涯，良师益友收获颇多~\
+        \n前有编译原理、后学操作系统，科班出身，后投身猿类大军~\
+        \n初出茅庐，满腔热忱，孜孜不倦，自得其乐~",
+      },
+      // key - value 数量及内容完全自定义，链接自动识别
+      keys: {
+        "主页": "http://cv.manerfan.com",
+        "博客": "http://blog.manerfan.com",
+        "专栏": "http://zhuanlan.manerfan.com"
+      },
+    },
+    // 履历
+    {
+      display: true,
+      anchor: {
+        id: "experience",
+        icon: "idcard",
+        name: "经历"
+      },
+      header: {
+        title: "experience",
+        subtitle: "my experience",
+      },
+      cards: [
+        {
+          title: "国研软件股份有限公司",
+          subtitle: "2020-08 至 今",
+          md: "**<u>软件开发实习生</u>**\
+          \n\
+          \n凭借自己的专业和课题与coding的一腔热情，一头扎进了猿类大军",
+        },
+        {
+          title: "杭州电子科技大学信息工程学院",
+          subtitle: "2017-09 至 2021-07",
+          md: "**<u>本科生</u>**\
+          \n\
+          \n**专业**：软件工程\
+          \n\
+          \n第一次背井离乡，坐上火车，远赴他乡\
+          \n踏进校园的一刻很激动，第一天晚上心口刺痛的时候就开始想家了\
+          \n四年象牙塔生活很充实，也第一次感受到了四年同寝离别时的伤感之情",
+        },
+      ],
+    },
+    // 博客页
+    {
+      display: true,
+      anchor: {
+        id: "works",
+        icon: "idcard",
+        name: "作品"
+      },
+      header: {
+        title: "works",
+        subtitle: "personal works",
+      },
+      cards: [
+        {
+          title: "国研软件股份有限公司",
+          url: "",
+          subtitle: "2020-08 至 今",
+          md: "**<u>软件开发实习生</u>**\
+          \n\
+          \n凭借自己的专业和课题与coding的一腔热情，一头扎进了猿类大军",
+        },
+        {
+          title: "魔塔 (MagicTower)",
+          url: "https://github.com/xhy1999/MagicTower",
+          subtitle: "2020-03 至 2020-08",
+          images: [{
+              url: 'image2'
+            }
+          ],
+          md: "\
+          \n<h2>使用Java复刻魔塔游戏</h2>\
+          \n魔塔是我小时候能玩到的为数不多的游戏，\
+          \n当我第一次接触它，就被他的玩法和通关路线所吸引。\
+          \n时隔多年，我也掌握了编程技能，\
+          \n于是尝试编写它，以纪念它在我心中无法替代的地位。\
+          \n\
+          \n此游戏完全用Java实现，从ui到时间轴、从战斗到人物对话...\
+          \n本游戏复刻的是胖老鼠的魔塔v1.12，游戏作者保留所有权利。\
+          \n游戏需要Java1.8及以上才能运行，源代码见右上脚贴。\
+          \n游戏下载地址:<a href='https://www.baidu.com' target='_blank'>点我下载</a>\
+          ",
+        },
+      ],
+    },
+  ],
+}
