@@ -7,12 +7,13 @@
       class="work-div"
       data-aos="fade-in"
       v-for="card in works.cards"
-      v-bind:key="card.title + card.subtitle">
+      v-bind:key="card.title + card.subtitle"
+    >
       <a-card class="works-card" :bordered="true" style="width: 100%;overflow:hidden;">
         <div class="fork-me" v-if="card.url != ''">
-            <a class="fork-me-link" v-bind:href="card.url" target="_blank">
-                <span class="fork-me-text">GitHub Address</span>
-            </a>
+          <a class="fork-me-link" v-bind:href="card.url" target="_blank">
+            <span class="fork-me-text">GitHub Address</span>
+          </a>
         </div>
         <template slot="title">
           <h1 class="title" v-html="card.title"></h1>
@@ -23,16 +24,20 @@
                     <img v-if="image.url === 'image2'" src="../assets/works/image2.png">
                     <vue-markdown class="md">{{card.md}}</vue-markdown>
         </div>-->
-        <a-row type="flex" justify="center" align="top">
+        <a-row type="flex" justify="left" align="top">
           <!-- 头像 -->
-          <a-col class>
-            <div class="image-div" v-for="image in card.images" v-bind:key="image.url">
-              <img v-if="image.url === 'image2'" src="../assets/works/image2.png" />
+          <a-col class="pic">
+            <div style="text-align: center;width:100%">
+              <div class="image-div" v-for="image in card.images" v-bind:key="image.url">
+                <img v-if="image.url === 'image2'" src="../assets/works/image2.png" />
+                <img v-if="image.url === 'image3'" src="../assets/works/image3.jpg" />
+                <img v-if="image.url === 'image4'" src="../assets/works/image4.jpg" />
+              </div>
             </div>
           </a-col>
           <!-- 内容 -->
           <a-col class="md">
-            <vue-markdown>{{card.md}}</vue-markdown>
+              <vue-markdown>{{card.md}}</vue-markdown>
           </a-col>
         </a-row>
       </a-card>
@@ -67,28 +72,43 @@ export default class Works extends Vue {}
 @media screen and (max-width: $--screen-sm-min) {
   img {
     overflow: hidden;
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     z-index: -1;
-    margin: 1rem;
+    float: left;
+  }
+  .md {
+    //margin: 1rem;
+    //margin-left: -3rem;
+    margin-top: 1.5rem;
+    width: 100%;
+    float: left;
+    //margin: 3rem;
+  }
+  .pic {
+    width: 100%;
   }
 }
 
 @media screen and (min-width: $--screen-sm-min) {
   img {
     overflow: hidden;
-    width: 65%;
-    height: 65%;
+    width: 70%;
+    height: 70%;
     z-index: -1;
     margin: 1rem;
+    float: left;
   }
   .md {
-    margin: 1rem;
-    margin-left: -3rem;
+    width: 60%;
+  }
+  .pic {
+    width: 40%;
   }
 }
 
 .image-div {
+  float: left;
   text-align: center;
 }
 
