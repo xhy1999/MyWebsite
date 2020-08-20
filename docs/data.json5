@@ -2,11 +2,11 @@
   // 页面title
   title: "薛昊洋 - Vip、疯子",
   // 社交链接
-  social: {
-    github: "https://github.com/manerfan",
-    twitter: "https://twitter.com/manerfan_china",
-    linkedin: "https://www.linkedin.com/in/%E6%B0%B8%E6%B0%B8-%E6%A8%8A-705071104/",
-  },
+  //social: {
+  //  github: "https://github.com/manerfan",
+  //  twitter: "https://twitter.com/manerfan_china",
+  //  linkedin: "https://www.linkedin.com/in/%E6%B0%B8%E6%B0%B8-%E6%A8%8A-705071104/",
+  //},
   // banner页
   banner: {
     anchor: {
@@ -17,9 +17,9 @@
     title: "Vip、疯子",
     desc: [
       "南方小伙",
-      "绰号疯子",
-      "码农一枚",
       "初出茅庐",
+      "花名疯子",
+      "码农一枚",
     ],
   },
   // 正文
@@ -52,9 +52,8 @@
       },
       // key - value 数量及内容完全自定义，链接自动识别
       keys: {
-        "主页": "http://cv.manerfan.com",
-        "博客": "http://blog.manerfan.com",
-        "专栏": "http://zhuanlan.manerfan.com"
+        "主页": "http://www.xuehaoyang.com",
+        "GitHub": "https://github.com/xhy1999"
       },
     },
     // 履历
@@ -73,9 +72,16 @@
         {
           title: "国研软件股份有限公司",
           subtitle: "2020-08 至 今",
-          md: "**<u>软件开发实习生</u>**\
+          md: "**职位**：软件开发实习生\
           \n\
           \n凭借自己的专业和课题与coding的一腔热情，一头扎进了猿类大军",
+        },
+        {
+          title: "杭州斯聪科技有限公司",
+          subtitle: "2019-11 至 2020-08",
+          md: "**职位**：软件开发实习生\
+          \n\
+          \n由老师推荐进入公司负责Java后端与Android端开发学习",
         },
         {
           title: "杭州电子科技大学信息工程学院",
@@ -90,12 +96,12 @@
         },
       ],
     },
-    // 博客页
+    // 作品页
     {
       display: true,
       anchor: {
         id: "works",
-        icon: "idcard",
+        icon: "profile",
         name: "作品"
       },
       header: {
@@ -103,14 +109,6 @@
         subtitle: "personal works",
       },
       cards: [
-        {
-          title: "国研软件股份有限公司",
-          url: "",
-          subtitle: "2020-08 至 今",
-          md: "**<u>软件开发实习生</u>**\
-          \n\
-          \n凭借自己的专业和课题与coding的一腔热情，一头扎进了猿类大军",
-        },
         {
           title: "魔塔 (MagicTower)",
           url: "https://github.com/xhy1999/MagicTower",
@@ -130,6 +128,26 @@
           \n本游戏复刻的是胖老鼠的魔塔v1.12，游戏作者保留所有权利。\
           \n游戏需要Java1.8及以上才能运行，源代码见右上脚贴。\
           \n游戏下载地址:<a href='https://www.baidu.com' target='_blank'>点我下载</a>\
+          ",
+        },
+        {
+          title: "仿全民K歌APP (WeSing)",
+          url: "",
+          subtitle: "2018-12 至 2019-01",
+          images: [
+            { url: 'image3' },
+            { url: 'image4' },
+          ],
+          md: "\
+          \n<h2>Android期末大作业</h2>\
+          \n在学习了一个学期的安卓后，\
+          \n我的老师希望我们能够自己开发一个K歌APP作为期末作业，\
+          \n这个题目让我一头雾水。\
+          \n最终，我参照了全民K歌的样式，\
+          \n使用了JSP-Servlet和OKHttp完成了K歌、评论和点赞等功能\
+          \n但是软件并不完美，有很多我没有考虑的地方，\
+          \n包括后端的框架，也只是单纯实现了功能。\
+          \n但是作为我的一个期末作业，我还是比较满意的。\
           ",
         },
       ],

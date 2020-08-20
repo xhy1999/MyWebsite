@@ -28,6 +28,9 @@
             <!-- 版权 -->
             <a-row type="flex" justify="center" align="middle" :gutter="2">
                 <a-col span="24"><Copyrights color="rgb(136,136,136)" :size=".6"/></a-col>
+                <a href="https://beian.miit.gov.cn/#/Integrated/recordQuery" target="_blank" style="text-decoration:none;color:rgb(136,136,136);font-size:.6rem">
+                    浙ICP备18053218号
+                </a>
             </a-row>
         </a-layout-footer>
     </a-layout>

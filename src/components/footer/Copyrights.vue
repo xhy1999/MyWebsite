@@ -24,7 +24,7 @@ SOFTWARE.
 
 <template>
     <a :style="{color: color, 'font-size': size + 'em'}" href="http://www.xuehaoyang.com" target="_blank">
-        ©2020 薛昊洋|Maner·Fan All rights reserved
+        ©2020 薛昊洋 All rights reserved
     </a>
 </template>
 

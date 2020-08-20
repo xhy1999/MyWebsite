@@ -16,7 +16,7 @@
           </a>
         </div>
         <template slot="title">
-          <h1 class="title" v-html="card.title"></h1>
+          <h2 class="title" v-html="card.title"></h2>
           <span v-if="!!card.subtitle" class="sub-title">{{card.subtitle}}</span>
         </template>
         <!-- <div class="image-div" v-for="image in card.images" v-bind:key="image.url">
@@ -27,17 +27,35 @@
         <a-row type="flex" justify="left" align="top">
           <!-- 头像 -->
           <a-col class="pic">
-            <div style="text-align: center;width:100%">
+            <div class="image-out-div">
               <div class="image-div" v-for="image in card.images" v-bind:key="image.url">
-                <img v-if="image.url === 'image2'" src="../assets/works/image2.png" />
-                <img v-if="image.url === 'image3'" src="../assets/works/image3.jpg" />
-                <img v-if="image.url === 'image4'" src="../assets/works/image4.jpg" />
+                <img
+                  data-aos="fade-in"
+                  class="avatar image2"
+                  draggable="false"
+                  v-if="image.url === 'image2'"
+                  src="../assets/works/image2.png"
+                />
+                <img
+                  data-aos="fade-in"
+                  class="avatar image3"
+                  draggable="false"
+                  v-if="image.url === 'image3'"
+                  src="../assets/works/image3.jpg"
+                />
+                <img
+                  data-aos="fade-in"
+                  class="avatar image4"
+                  draggable="false"
+                  v-if="image.url === 'image4'"
+                  src="../assets/works/image4.jpg"
+                />
               </div>
             </div>
           </a-col>
           <!-- 内容 -->
           <a-col class="md">
-              <vue-markdown>{{card.md}}</vue-markdown>
+            <vue-markdown>{{card.md}}</vue-markdown>
           </a-col>
         </a-row>
       </a-card>
@@ -69,6 +87,7 @@ export default class Works extends Vue {}
 <style scoped lang="scss">
 @import "../styles/variable";
 
+//小屏幕
 @media screen and (max-width: $--screen-sm-min) {
   img {
     overflow: hidden;
@@ -78,15 +97,25 @@ export default class Works extends Vue {}
     float: left;
   }
   .md {
-    //margin: 1rem;
-    //margin-left: -3rem;
     margin-top: 1.5rem;
     width: 100%;
-    float: left;
-    //margin: 3rem;
+    //float: left;
   }
   .pic {
     width: 100%;
+    text-align: center;
+  }
+  .avatar {
+    display: block;
+    width: 50%;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .image2 {
+    width: 100%;
+  }
+  .image3 .image4 {
+    width: 50%;
   }
 }
 
@@ -96,20 +125,27 @@ export default class Works extends Vue {}
     width: 70%;
     height: 70%;
     z-index: -1;
-    margin: 1rem;
-    float: left;
+    //margin: .5rem;
+    //float: left;
   }
   .md {
     width: 60%;
   }
   .pic {
     width: 40%;
+    text-align: center;
   }
-}
-
-.image-div {
-  float: left;
-  text-align: center;
+  .avatar {
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .image-out-div {
+    width: 115%;
+  }
+  .image-div {
+    float: left;
+  }
 }
 
 .work-div {
