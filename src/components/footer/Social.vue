@@ -3,8 +3,20 @@
 <template>
     <div class="social" :style="{'font-size': size + 'em'}">
         <!-- github -->
-        <a :style="{color: color}" :href="'https://github.com/xhy1999'" target="_blank"><a-icon type="github"/></a>
-        <a-icon type="more" />
+        <a :style="{color: color}" :href="'https://github.com/xhy1999'" target="_blank">
+            <a-icon type="github"/>
+        </a>
+        <a :style="{color: color}" :href="'https://mail.qq.com'" target="_blank" alt="Vip、疯子">
+            <a-icon type="mail" theme=""/>
+        </a>
+        <a-popover arrowPointAtCenter>
+            <template slot="content">
+                <img style="width: 360px; max-width: 80vw; height: auto;" src="../../assets/author_uri.png"/>
+            </template>
+            <a :style="{color: color}" href="https://zhuanlan.zhihu.com/p/102077861" target="_blank">
+                <a-icon type="home" theme="filled"/>
+            </a>
+        </a-popover>
         <!-- 微信 -->
         <!-- <a-popover arrowPointAtCenter>
             <template slot="content"><img style="width: 360px; max-width: 80vw; height: auto;" alt="Vip、疯子" src="../../assets/wechat.jpg"/></template>

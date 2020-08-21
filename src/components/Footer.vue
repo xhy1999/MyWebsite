@@ -12,7 +12,7 @@
                 <a-popover arrowPointAtCenter>
                     <template slot="content"><Badge/></template>
                     <span class="avatar ant-avatar ant-avatar-circle ant-avatar-image">
-                        <img alt="薛昊洋|Maner·Fan" draggable="false" src="../assets/MyHead.jpg"/>
+                        <img alt="薛昊洋" draggable="false" src="../assets/MyHead.jpg"/>
                     </span>
                 </a-popover>
             </a-col>

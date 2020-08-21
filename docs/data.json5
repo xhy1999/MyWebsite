@@ -53,7 +53,8 @@
       // key - value 数量及内容完全自定义，链接自动识别
       keys: {
         "主页": "http://www.xuehaoyang.com",
-        "GitHub": "https://github.com/xhy1999"
+        "GitHub": "https://github.com/xhy1999",
+        "Email": "xuehy1999@vip.qq.com"
       },
     },
     // 履历
