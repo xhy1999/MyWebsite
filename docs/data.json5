@@ -1,6 +1,6 @@
 {
   // 页面title
-  title: "薛昊洋 - Vip、疯子",
+  title: "Vip、疯子",
   // 社交链接
   //social: {
   //  github: "https://github.com/manerfan",
@@ -52,7 +52,7 @@
       },
       // key - value 数量及内容完全自定义，链接自动识别
       keys: {
-        "主页": "http://www.xuehaoyang.com",
+        "主页": "http://www.xuehaoyang.cn",
         "GitHub": "https://github.com/xhy1999",
         "Email": "xuehy1999@vip.qq.com"
       },
@@ -71,8 +71,15 @@
       },
       cards: [
         {
+          title: "宁波芯然科技有限公司(宁波工业互联网研究院)",
+          subtitle: "2021-04 至 今",
+          md: "**职位**：Java开发工程师\
+          \n\
+          \n最终，我选择回到家乡，为家乡建设贡献自己的一份力量",
+        },
+        {
           title: "国研软件股份有限公司",
-          subtitle: "2020-08 至 今",
+          subtitle: "2020-08 至 2021-03",
           md: "**职位**：软件开发实习生\
           \n\
           \n凭借自己的专业和课题与coding的一腔热情，一头扎进了猿类大军",
@@ -128,7 +135,7 @@
           \n此游戏完全用Java实现，从ui到时间轴、从战斗到人物对话...\
           \n本游戏复刻的是胖老鼠的魔塔v1.12，游戏作者保留所有权利。\
           \n游戏需要Java1.8及以上才能运行，源代码见右上脚贴。\
-          \n游戏下载地址:<a href='https://www.baidu.com' target='_blank'>点我下载</a>\
+          \n游戏下载地址:<a href='http://www.xuehaoyang.cn:81/Android/File/app-debug.apk'>点我下载</a>\
           ",
         },
         {
@@ -149,6 +156,7 @@
           \n但是软件并不完美，有很多我没有考虑的地方，\
           \n包括后端的框架，也只是单纯实现了功能。\
           \n但是作为我的一个期末作业，我还是比较满意的。\
+          \nAPK下载地址:<a href='http://www.xuehaoyang.cn:81/Android/File/app-debug.apk'>点我下载</a>\
           ",
         },
       ],

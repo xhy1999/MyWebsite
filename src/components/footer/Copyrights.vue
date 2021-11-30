@@ -1,6 +1,6 @@
 <template>
-    <a :style="{color: color, 'font-size': size + 'em'}" href="http://www.xuehaoyang.com">
-        ©2020 薛昊洋 All rights reserved
+    <a :style="{color: color, 'font-size': size + 'em'}" href="http://www.xuehaoyang.cn">
+        ©2022 薛昊洋 All rights reserved
     </a>
 </template>
 
